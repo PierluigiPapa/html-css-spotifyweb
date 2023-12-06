@@ -9,7 +9,6 @@ body {
 }
 
 main {
-    background-color: green;
 }
 
 /* UTILITY */
@@ -115,3 +114,40 @@ h5 {
     font-size: 15px;
     color: var(--color2);
 }
+
+/* // SECTION SIDEBAR // */
+
+/* SECTION UPGRADE */
+
+#main-content {
+    flex-grow: 1;
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+.top-menu {
+    height: 80px;
+    width: calc(100% - 50px);
+    background-color: rgba(8,11,18, 0.5);
+    position: fixed;
+    top: 0;
+    right: 40;
+    z-index: 1;
+}
+
+.btn-upgrade {
+    position: absolute;
+
+    right: 300px;
+    top: 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 30px;
+
+    color: var(--color2);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+/* // SECTION UPGRADE // */
