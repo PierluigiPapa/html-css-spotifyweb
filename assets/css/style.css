@@ -8,98 +8,110 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    background-color: green;
+}
+
+/* UTILITY */
+
 :root {
     --color1: #000000;
-    --color2: #434343;
-    --color3: #808080;
+    --color2: #FFFFFF;
+    --color3: #080b12;
+    --color4: #141922;
+    --color5: #6e6e6e;
 }
 
-.main-container {
-    
-    background-color: var(--color2);
-
-}
-
-/* SECTION SIDEBAR  */
-
-.sidebar {
-    background-color: var(--color1);
-    color: var(--color2);
-
+.flex {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    width: 230px;
-    height: 110vh;
-
-    padding: 15px 15px 0px 15px;
 }
 
-.sidebar figure img {
-    width: 90%;
-}
-
-.sidebar figure img:last-child {
-    display: none;
-}
-
-.sidebar ul li img{
-    width: 30px;
-}
-
-.sidebar li {
-    margin-top: 20px;
-    font-weight: 700;
-}
-.sidebar i {
-    background-color: var(--color2);
+a {
+    text-decoration: none;
+    color: var(--color5);
+    font-size: 15px;
+    font-weight: 600;
 }
 
 ul {
     list-style-type: none;
 }
 
-h4 {
-    margin-top: 20px;
-    color: white;
+h5 {
+    color: var(--color2);
+    font-size: 17px;
+}
+/* // UTILITY // */
+
+
+/* SECTION SIDEBAR */
+
+#sidebar {
+    background-color: var(--color1);
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
 }
 
-.sidebar .download {
-    display: block;
-    margin-left: 5px;
+#sidebar figure img:first-child {
+    width: 55%;
+    margin: 10px;
+}
+
+#sidebar figure img:last-child {
+    display: none;
+}
+
+#sidebar .nav {
+    margin: 10px;
+}
+#sidebar .nav img {
+    width: 10%;
+}
+
+.playlist {
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
-.sidebar .download img {
-    width: 20px;
-    color: var(--color2);
-}
-
-.sidebar .download span {
-    font-size: 13px;
-    font-weight: 700;
-}
-
-hr {
-    color: var(--color2);
-}
-
-.sidebar .profile {
+.playlist ul li {
     margin-top: 10px;
 }
 
-.sidebar .profile img {
-    width: 30px;
-    background-color: var(--color3);
-    border-radius: 30px;
+.fas {
+    background-color: var(--color5);
 }
 
-.sidebar .profile span {
-    color: white;
-    margin-left: 10px;
+.administration {
+    margin-top: 70px;
+}
+
+.administration .download {
+    margin-bottom: 10px;
+}
+
+.administration span {
+    color: var(--color5);
+    font-size: 13px;
     font-weight: 600;
 }
 
-/* // SECTION SIDEBAR // */
+.administration hr {
+    width: 50%;
+    color: var(--color5);
+}
+
+.profile {
+    margin-top: 10px;
+}
+
+.profile img {
+    background-color: var(--color5);
+    border-radius: 40%;
+}
+
+.profile span {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color2);
+}
