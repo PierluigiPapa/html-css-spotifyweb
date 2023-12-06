@@ -9,6 +9,7 @@ body {
 }
 
 main {
+    background-color: var(--color4);
 }
 
 /* UTILITY */
@@ -36,6 +37,10 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    color: var(--color2)
+}
+
 h5 {
     color: var(--color2);
     font-size: 17px;
@@ -48,6 +53,7 @@ h5 {
 #sidebar {
     background-color: var(--color1);
 
+   
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
@@ -106,7 +112,7 @@ h5 {
 
 .profile img {
     background-color: var(--color5);
-    border-radius: 40%;
+    border-radius: 90%;
 }
 
 .profile span {
@@ -128,8 +134,10 @@ h5 {
 .top-menu {
     height: 80px;
     width: calc(100% - 50px);
+
     background-color: rgba(8,11,18, 0.5);
     position: fixed;
+
     top: 0;
     right: 40;
     z-index: 1;
@@ -138,7 +146,7 @@ h5 {
 .btn-upgrade {
     position: absolute;
 
-    right: 300px;
+    right: 270px;
     top: 20px;
 
     font-size: 14px;
@@ -151,3 +159,28 @@ h5 {
 }
 
 /* // SECTION UPGRADE // */
+
+ /* SECTION CONTENT MENU */
+
+#content-menu {
+    padding-top: 90px;
+}
+
+#content-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#content-menu li a {
+    padding-right: 30px;
+    padding-bottom: 15px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    position: relative;
+}
+
+/* // SECTION CONTENT MENU // */
