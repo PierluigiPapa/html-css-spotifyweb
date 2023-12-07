@@ -8,9 +8,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    background-color: var(--color4);
+.container {
+    width: 100vw;
+    height: 100vh;
 }
+
+.app-main {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    overflow: hidden;
+}
+
 
 /* UTILITY */
 
@@ -20,6 +29,7 @@ main {
     --color3: #080b12;
     --color4: #141922;
     --color5: #6e6e6e;
+    --color6: #55585e;
 }
 
 .flex {
@@ -53,7 +63,7 @@ h5 {
 #sidebar {
     background-color: var(--color1);
 
-   
+
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
@@ -184,3 +194,74 @@ h5 {
 }
 
 /* // SECTION CONTENT MENU // */
+
+/* SECTION RECENTLY PLAYED */
+
+.recently-played h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.section-recently-played {
+    display: flex;
+    justify-content: flex-start;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.album {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: calc(100% / 6 - 20px);
+}
+
+.album figure img {
+    width: 90%;
+}
+
+.album h3 {
+    color: var(--color2);
+    margin-bottom: 5px;
+}
+
+.album span {
+    color: var(--color6);
+    font-weight: 600;
+}
+
+/* // SECTION RECENTLY PLAYED // */
+
+
+@media screen and (max-width: 768px) {
+    .btn-upgrade {
+        right: 10px;
+    }
+
+    .section-recently-played {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .btn-upgrade {
+        right: 70px;
+    }
+
+    #content-menu ul li{
+        margin-bottom: 10px;
+    }
+
+    .album figure img {
+        width: 40%;
+    }
+
+    .section-recently-played {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
