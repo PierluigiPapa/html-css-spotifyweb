@@ -13,11 +13,9 @@ body {
     height: 100vh;
 }
 
-.app-main {
-    width: 100vw;
-    height: calc(100vh - 90px);
-    display: flex;
-    overflow: hidden;
+
+main {
+    background-color: var(--color4);
 }
 
 
