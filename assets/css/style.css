@@ -195,17 +195,19 @@ h5 {
 
 /* SECTION RECENTLY PLAYED */
 
-.recently-played h2 {
+.recently-played h2,
+.created-for h2 {
     margin-top: 20px;
     margin-left: 30px;
 }
 
-.section-recently-played {
+.section-recently-played{
     display: flex;
     justify-content: flex-start;
 
     text-align: center;
     font-size: 14px;
+    margin-left: 20px;
 }
 
 .album {
@@ -229,6 +231,17 @@ h5 {
 }
 
 /* // SECTION RECENTLY PLAYED // */
+
+.created-for h4 {
+    color: var(--color5);
+    margin-left: 28px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.created-for .album {
+    margin
+}
 
 
 @media screen and (max-width: 768px) {
